@@ -10,7 +10,7 @@ const cities = {
 };
 
 
-  // Calcolo il prezzo del biglietto in base all'età e alla destinazione
+// Calcolo il prezzo del biglietto in base all'età e alla destinazione
 
   function calculatePrice() {
   let city = document.getElementById("city").value;
@@ -54,29 +54,29 @@ const cities = {
     invalidInput = true;
   }
 
-if (!invalidInput) {
-document.getElementById("ticket-offer-field").innerHTML = offer;
-document.getElementById("ticket-carriage-field").innerHTML = carriage;
-document.getElementById("ticket-code-field").innerHTML = code;
-document.getElementById("ticket-price").innerHTML = discountedPrice.toFixed(2) + " €";
-document.getElementById("ticket-name-field").innerHTML = name;
-}
+  if (!invalidInput) {
+  document.getElementById("ticket-offer-field").innerHTML = offer;
+  document.getElementById("ticket-carriage-field").innerHTML = carriage;
+  document.getElementById("ticket-code-field").innerHTML = code;
+  document.getElementById("ticket-price").innerHTML = discountedPrice.toFixed(2) + " €";
+  document.getElementById("ticket-name-field").innerHTML = name;
+  }
 
 }
   
-  // Aggiungo un event listener al button Genera
+// Aggiungo un event listener al button Genera
   
-  document.querySelector(".btn-primary").addEventListener("click", calculatePrice);
+document.querySelector(".btn-primary").addEventListener("click", calculatePrice);
   
-  // Aggiungo un event listener al button Annulla
+// Aggiungo un event listener al button Annulla
 
-  document.querySelector(".btn-danger").addEventListener("click", function () {
-  document.getElementById("nome").value = "";
-  document.getElementById("city").value = "";
-  document.getElementById("age-group").value = "";
-  document.getElementById("ticket-offer-field").innerHTML = "";
-  document.getElementById("ticket-carriage-field").innerHTML = "";
-  document.getElementById("ticket-code-field").innerHTML = "";
-  document.getElementById("ticket-price").innerHTML = "";
-  document.getElementById("ticket-name-field").innerHTML = "";
-  });
+document.querySelector(".btn-danger").addEventListener("click", function () {
+document.getElementById("nome").value = "";
+document.getElementById("city").value = "";
+document.getElementById("age-group").value = "";
+document.getElementById("ticket-offer-field").innerHTML = "";
+document.getElementById("ticket-carriage-field").innerHTML = "";
+document.getElementById("ticket-code-field").innerHTML = "";
+document.getElementById("ticket-price").innerHTML = "";
+document.getElementById("ticket-name-field").innerHTML = "";
+});
