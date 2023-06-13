@@ -46,13 +46,21 @@ const cities = {
     alert("Il campo 'Nome' non accetta valori numerici.");
     invalidInput = true;
   }
-  
-  document.getElementById("ticket-offer-field").innerHTML = offer;
-  document.getElementById("ticket-carriage-field").innerHTML = carriage;
-  document.getElementById("ticket-code-field").innerHTML = code;
-  document.getElementById("ticket-price").innerHTML = discountedPrice.toFixed(2) + " €";
-  document.getElementById("ticket-name-field").innerHTML = name;
+ 
+  if (name === "" || city === "" || ageGroup === "") {
+    alert("Per favore, inserisci tutti i campi richiesti.");
+    invalidInput = true;
   }
+
+if (!invalidInput) {
+document.getElementById("ticket-offer-field").innerHTML = offer;
+document.getElementById("ticket-carriage-field").innerHTML = carriage;
+document.getElementById("ticket-code-field").innerHTML = code;
+document.getElementById("ticket-price").innerHTML = discountedPrice.toFixed(2) + " €";
+document.getElementById("ticket-name-field").innerHTML = name;
+}
+
+}
   
   // Aggiungo un event listener al button Genera
   
