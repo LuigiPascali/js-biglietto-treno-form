@@ -33,217 +33,228 @@
 
     <body>
         
-        <!-- ! Header Start -->
-        <header>
+      <!-- ! Header Start -->
+      <header>
 
-            <nav class="navbar navbar-expand-lg">
-
-                <div class="container">
-
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/img_1.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
-                        <span class="d-none d-sm-inline-block ml-3 text-white"> Lanley Monorail </span>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            
-                        </ul>
-                    </div>
-
-                </div>
-                
-            </nav>
-
-        </header>
-
-        <!-- ! Main Start -->
-        <main>
+        <nav class="navbar navbar-expand-lg">
 
             <div class="container">
-          
-              <div class="row">
-          
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
-          
-                  <div class="card text-center">
-          
-                    <img src="./img/img_2.jpg" class="card-img-top img-fluid" alt="img_2">
-          
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Ciao, sono Lyle Lanley, sei pronto a gustarti un esperienza a bordo della mia "sicurissima" monorotaia?!
-                      </h5>
-          
-                      <h5 class="card-title">
-                        Per prima cosa scrivi il tuo nome e cognome:
-                      </h5>
-          
-                      <div class="form-group">
-                        <label for="nome"></label>
-                        <input type="text" class="form-control" id="nome" name="nome">
-                      </div>
-          
-                    </div>
-          
-                  </div>
-          
-                </div>
-          
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
-          
-                  <div class="card text-center">
-          
-                    <img src="./img/img_lyle.jpg" class="card-img-top img-fluid" alt="lyle_img">
-          
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Ben Fatto! <br>
-                        Ora scegli tra le nostre fantasmagoriche destinazioni, la tua (dis)avventura sta per cominciare..
-          
-                        <h5 class="card-title">
-                          Dove vorresti andare?
-                        </h5>
-          
-                        <select class="form-control my_fc" id="city">
-                          <option value="">Seleziona una città</option>
-                          <option value="springfield">Springfield</option>
-                          <option value="shelbyville">Shelbyville</option>
-                          <option value="san_andreas">San Andreas</option>
-                          <option value="sin_city">Sin City</option>
-                          <option value="quahog">Quahog</option>
-                          <option value="marte">Marte</option>
-                        </select>
-          
-                      </div>
-          
-                  </div>
-          
-                </div>
-          
-                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
-          
-                  <div class="card text-center">
-          
-                    <img src="./img/img_3.jpg" class="card-img-top img-fluid" alt="img_3">
-          
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Ottimooooooo! <br>
-                        Un ultimissimo sforzo ed il gioco è fatto. <br>
-                        Scegli tra queste tre fasce d'età per calcolare il costo del tuo biglietto:
-                      </h5>
-          
-                      <form>
-                        <div class="form-group my_fg">
-                          <label for="age-group"></label>
-                          <select class="form-control" id="age-group" name="age-group">
-                            <option value=""></option>
-                            <option value="minorenne">Minorenne</option>
-                            <option value="maggiorenne">Maggiorenne</option>
-                            <option value="over-65">Over 65</option>
-                          </select>
-                        </div>
-          
-                      </form>
-          
-                    </div>
-          
-                  </div>
-          
-                </div>
-          
-              </div>
 
-              <div class="row">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/img_1.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+                    <span class="d-none d-sm-inline-block ml-3 text-white"> Lanley Monorail </span>
+                </a>
 
-                <div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 d-flex justify-content-center mt-4 mb-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="card text-center">
-          
-                        <img src="./img/img_5.jpg" class="card-img-top img-fluid" alt="img_2">
-              
-                        <div class="card-body">
-
-                            <h5 class="card-title">
-                               Premi Genera per generare il tuo biglietto <br>
-                               Annulla per ricominciare tutto da capo <br>
-                            </h5>
-
-                            <h5 class="card-title">
-                                Il nostro potentissimo sistema genererà in un attimo il tuo biglietto..
-                            </h5>
-
-                            <hr>
-              
-                            <div class="btn-group" role="group" aria-label="Basic example" style="gap: 1.25rem">
-                                <button type="button" class="btn btn-primary rounded" id="generate-btn">Genera</button>
-                                <button type="button" class="btn btn-danger rounded" id="reset-btn">Annulla</button>
-                            </div>
-              
-                        </div>
-              
-                    </div>
-
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        
+                    </ul>
                 </div>
 
-              </div>
-          
-
-          
-              <div class="row">
-          
-                <div class="col-sm-12 col-md-12 col-lg-12 mt-4 mb-4">
-          
-                  <div class="card text-center">
-          
-                    <img src="./img/img_4.jpg" class="card-img-top img-fluid" alt="img_4" style="max-height: 37.5rem;">
-          
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Ecco il tuo biglietto per viaggiare sulla fantastica Lanley Monorail
-                      </h5>
-                      <hr class="card-divider my_fc">
-          
-                      <table class="table table-borderless">
-                        <thead>
-                          <tr>
-                            <th>Nome Passeggero</th>
-                            <th>Offerta</th>
-                            <th>Carrozza</th>
-                            <th>Codice CP</th>
-                            <th>Costo Biglietto</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td id="ticket-name-field"></td>
-                            <td id="ticket-offer-field"></td>
-                            <td id="ticket-carriage-field"></td>
-                            <td id="ticket-code-field"></td>
-                            <td id="ticket-price"></td>
-                          </tr>
-                        </tbody>
-                      </table>
-          
-                    </div>
-          
-                  </div>
-          
-                </div>
-          
-              </div>
-          
             </div>
+            
+        </nav>
+
+      </header>
+
+      <!-- ! Main Start -->
+      <main>
+
+        <div class="container">
+      
+          <div class="row">
+      
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
+      
+              <div class="card text-center">
+      
+                <img src="./img/img_2.jpg" class="card-img-top img-fluid" alt="img_2">
+      
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Ciao, sono Lyle Lanley, sei pronto a gustarti un esperienza a bordo della mia "sicurissima" monorotaia?!
+                  </h5>
+      
+                  <h5 class="card-title">
+                    Per prima cosa scrivi il tuo nome e cognome:
+                  </h5>
+      
+                  <div class="form-group">
+                    <label for="nome"></label>
+                    <input type="text" class="form-control" id="nome" name="nome">
+                  </div>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+      
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
+      
+              <div class="card text-center">
+      
+                <img src="./img/img_lyle.jpg" class="card-img-top img-fluid" alt="lyle_img">
+      
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Ben Fatto! <br>
+                    Ora scegli tra le nostre fantasmagoriche destinazioni, la tua (dis)avventura sta per cominciare..
+      
+                    <h5 class="card-title">
+                      Dove vorresti andare?
+                    </h5>
+      
+                    <select class="form-control my_fc" id="city">
+                      <option value="">Seleziona una città</option>
+                      <option value="springfield">Springfield</option>
+                      <option value="shelbyville">Shelbyville</option>
+                      <option value="san_andreas">San Andreas</option>
+                      <option value="sin_city">Sin City</option>
+                      <option value="quahog">Quahog</option>
+                      <option value="marte">Marte</option>
+                    </select>
+      
+                  </div>
+      
+              </div>
+      
+            </div>
+      
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
+      
+              <div class="card text-center">
+      
+                <img src="./img/img_3.jpg" class="card-img-top img-fluid" alt="img_3">
+      
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Ottimooooooo! <br>
+                    Un ultimissimo sforzo ed il gioco è fatto. <br>
+                    Scegli tra queste tre fasce d'età per calcolare il costo del tuo biglietto:
+                  </h5>
+      
+                  <form>
+                    <div class="form-group my_fg">
+
+                      <label for="age-group"></label>
+                      <select class="form-control" id="age-group" name="age-group">
+                        <option value=""></option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over-65">Over 65</option>
+                      </select>
+
+                    </div>
+      
+                  </form>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-4 mb-4">
+
+                <div class="card text-center">
+      
+                    <img src="./img/img_5.jpg" class="card-img-top img-fluid" alt="img_2" style="max-height: 37.5rem;">
           
-        </main>
-       
-        <!-- ! Java Script -->
-        <script type="text/javascript" src="./js/script.js"></script>
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Premi Genera per generare il tuo biglietto <br>
+                            Annulla per ricominciare tutto da capo <br>
+                        </h5>
+
+                        <h5 class="card-title">
+                            Il nostro potentissimo sistema genererà il tuo biglietto in un attimo..
+                        </h5>
+
+                        <hr>
+          
+                        <div class="btn-group" role="group"style="gap: 1.25rem">
+                            <button type="button" class="btn btn-primary rounded" id="generate-btn">Genera</button>
+                            <button type="button" class="btn btn-danger rounded" id="reset-btn">Annulla</button>
+                        </div>
+          
+                    </div>
+          
+                </div>
+
+            </div>
+
+          </div>
+    
+          <div class="row">
+      
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-4 mb-4">
+      
+              <div class="card text-center">
+      
+                <img src="./img/img_4.jpg" class="card-img-top img-fluid" alt="img_4" style="max-height: 37.5rem;">
+      
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Ecco il tuo biglietto per viaggiare sulla fantastica Lanley Monorail
+                  </h5>
+                  <hr class="card-divider my_fc">
+
+                  <div class="table-responsive">
+
+                    <table class="table table-borderless">
+
+                      <thead>
+
+                        <tr>
+                          <th>Nome Passeggero</th>
+                          <th>Offerta</th>
+                          <th>Carrozza</th>
+                          <th>Codice CP</th>
+                          <th>Costo Biglietto</th>
+                        </tr>
+
+                      </thead>
+
+                      <tbody>
+
+                        <tr>
+                          <td id="ticket-name-field"></td>
+                          <td id="ticket-offer-field"></td>
+                          <td id="ticket-carriage-field"></td>
+                          <td id="ticket-code-field"></td>
+                          <td id="ticket-price"></td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+                  </div>
+              
+                </div>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+      
+        </div>
+        
+      </main>
+      
+      <!-- ! Java Script -->
+      <script type="text/javascript" src="./js/script.js"></script>
 
     </body>
 
