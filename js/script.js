@@ -38,12 +38,14 @@ const cities = {
   output.innerHTML = discountedPrice.toFixed(2) + " €";
   
   let name = document.getElementById("nome").value;
+
+  
   let offer = ageGroup === "minorenne"? "Tariffa Minorenni" : ageGroup === "over-65"? "Tariffa Over 65" : "Tariffa Standard";
   let carriage = Math.floor(Math.random() * 10) + 1;
   let code = Math.floor(Math.random() * 100000) + 1;
 
   if (!isNaN(name)) {
-    alert("Il campo 'Nome' non accetta valori numerici.");
+    alert("Il campo 'Nome e Cognome' non accetta valori numerici.");
     invalidInput = true;
   }
  
