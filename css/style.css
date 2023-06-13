@@ -1,11 +1,17 @@
-
 /* 
     HEADER
 */
 
-
+.navbar {background: linear-gradient(to bottom, #8C1F28, #D92525);} 
 
 /* 
     MAIN
 */
 
+.card {border: .0625rem solid #ccc;padding: .625rem;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.2);}
+  
+.card img {width: 100%;border-radius: .3125rem;}
+
+.my_fc {margin-top: 1.875rem;}
+
+.my_fg {margin-top: 2.5rem;}
